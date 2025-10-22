@@ -223,8 +223,8 @@ def evaluate_model(model, test_loader):
 train_losses, val_losses = train_model(model, train_loader, test_loader, loss_fn, optimizer, epochs=3)
 true_tags, pred_tags = evaluate_model(model, test_loader)
 
-print('Name: Dharshan D')
-print('Register Number: 212223230045')
+print('Name: MOONESH P')
+print('Register Number: 212223230126')
 history_df = pd.DataFrame({"loss": train_losses, "val_loss": val_losses})
 history_df.plot(title="Loss Over Epochs")
 plt.xlabel("Epoch")
@@ -239,8 +239,8 @@ output = model(sample)
 preds = torch.argmax(output, dim=-1).squeeze().cpu().numpy()
 true = y_test[i].numpy()
 
-print('Name: Dharshan D')
-print('Register Number: 212223230045')
+print('Name: MOONESH P')
+print('Register Number: 212223230126')
 print("{:<15} {:<10} {}\n{}".format("Word", "True", "Pred", "-" * 40))
 for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
     if w_id.item() != word2idx["ENDPAD"]:
